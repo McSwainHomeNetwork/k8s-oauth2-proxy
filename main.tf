@@ -239,7 +239,7 @@ resource "helm_release" "oauth2_proxy" {
 
   set {
     name  = "env[8].value"
-    value = "redis://redis.redis.svc.cluster.local"
+    value = "redis://redis-app.redis.svc.cluster.local"
     type  = "string"
   }
 
